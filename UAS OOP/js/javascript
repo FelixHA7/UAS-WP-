@@ -1,0 +1,43 @@
+// JavaScript untuk validasi form login
+function validateLoginForm() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    if (username === '' || password === '') {
+        alert('Both fields are required.');
+        return false;
+    }
+
+    // Validasi tambahan bisa ditambahkan di sini
+    // Contoh: validasi username dan password dengan database (membutuhkan backend)
+
+    // Jika validasi berhasil, alihkan pengguna ke halaman beranda
+    alert('Login successful!');
+    window.location.href = 'index.html';
+    return false; // Mencegah pengiriman form asli untuk tujuan demonstrasi
+}
+// JavaScript untuk validasi form registrasi
+function validateRegisterForm() {
+    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirmPassword').value;
+
+    if (username === '' || email === '' || password === '' || confirmPassword === '') {
+        alert('All fields are required.');
+        return false;
+    }
+
+    if (password !== confirmPassword) {
+        alert('Passwords do not match.');
+        return false;
+    }
+
+    // Validasi tambahan bisa ditambahkan di sini
+    // Contoh: validasi email dengan database (membutuhkan backend)
+
+    // Jika validasi berhasil, alihkan pengguna ke halaman login
+    alert('Registration successful!');
+    window.location.href = 'login.html';
+    return false; // Mencegah pengiriman form asli untuk tujuan demonstrasi
+}

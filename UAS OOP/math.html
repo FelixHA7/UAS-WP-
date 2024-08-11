@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course with Video - E-Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tutor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.tutor {
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: calc(33% - 1.5rem);
+    box-sizing: border-box;
+}
+
+.tutor img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+.tutor h3 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+.tutor p {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .tutor {
+        width: calc(50% - 1.5rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .tutor {
+        width: 100%;
+    }
+}
+.math {
+    text-align: center;
+}
+</style>
+<body>
+    <header>
+        <h1>E-guru</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="math.html">Course 1</a></li>
+                <li><a href="science.html">Course 2</a></li>
+                <li><a href="language.html">Course 3</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="math">
+        <h2>Mathematics</h2>
+        <p>Get a Perfect Score on your math subject with the help of our best tutor</p>
+        </div>
+        <div class="tutor">
+            <img src="img/guru1.jpg" alt="Tutor 1">
+            <h3>Wang Ba</h3>
+            <p>Specializes in Mathematics with over 5 years of experience teaching high school students.</p>
+        </div>
+        
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-Learning</p>
+    </footer>
+
+    
+</body>
+</html>

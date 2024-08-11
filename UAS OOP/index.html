@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - E-Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            padding: 0;
+            list-style: none;
+            z-index: 1000;
+        }
+
+        nav ul li ul li {
+            width: 150px;
+        }
+
+        nav ul li ul li a {
+            padding: 10px;
+            color: #000000;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+        }
+        .Guru {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body class="background-page"></body>
+
+
+    <header>
+        <h1>Welcome to E-guru</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="course.html">Courses</a>
+                    <ul>
+                        <li><a href="math.html">Math</a></li>
+                        <li><a href="science.html">Science</a></li>
+                        <li><a href="language.html">Languages</a></li>
+                    </ul>
+                </li>
+                <li><a href="tutors.html">Tutors</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="resources.html">Resource</a></li>
+                <li><a href="subscription.html">Subscription</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="Guru">
+        <h2>Welcome to E-guru</h2>
+        <p>Explore our courses to enhance your knowledge and skills.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-guru</p>
+    </footer>
+
+    <script src="js/javascript"></script>
+</body>
+</html>

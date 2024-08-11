@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course with Video - E-Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .video {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Menempatkan tombol play dan pause di tengah */
+        .video-controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .video-controls button {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>E-guru</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="math.html">Course 1</a></li>
+                <li><a href="science.html">Course 2</a></li>
+                <li><a href="language.html">Course 3</a></li>
+                <!-- Tambahkan tautan kursus lainnya -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Course Title</h2>
+        <p>Course content goes here.</p>
+        
+        <h3>Course Video</h3>
+        <div class="video">
+        <video id="learningVideo" width="640" height="360" controls t>
+            <source src=".mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+        
+        <div>
+            <button id="playButton">Play</button>
+            <button id="pauseButton">Pause</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-Learning</p>
+    </footer>
+
+    <script src="js/video.js"></script>
+</body>
+</html>
